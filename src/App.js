@@ -13,7 +13,10 @@ const App = () => {
   return (
     <div>
       <p>{myNumber}</p>
-      <button onClick={() => setMyNumber(myNumber + 1)}>Incrémenter + 1</button>
+      {/* verify type of response */}
+      <button onClick={() => setMyNumber(Number(myNumber) + 1)}>
+        Incrémenter + 1
+      </button>
       <label htmlFor="">Numéro de départ</label>
       <input
         type="number"
